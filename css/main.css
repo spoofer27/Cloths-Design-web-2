@@ -1,0 +1,107 @@
+/*///////////////////////////////*/
+/*custom classes*/
+.upp{text-transform: uppercase}
+.bold{font-weight: bold}
+
+
+
+
+/*////////////////////////////*/
+*{
+    text-transform: capitalize;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -op-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+ul{list-style: none;padding: 0;margin: 0}
+li{display: inline-block;padding: 10px;margin: 0}
+body{height: 4000px;position: relative}
+/*//////////////////////////////*/
+/*navigation styling*/
+/*general settings*/
+nav{
+    background: #888;
+    opacity: .7;
+    color: #eee;
+    overflow: hidden;
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 0
+}
+nav .title{
+    width: 30%;
+    float: left
+}
+nav .menu{display: none}
+nav ul{
+    width: 70%;
+    float: right;
+}
+nav .menu-arrow{display: none}
+
+/*//////////////////////////////*/
+
+@media (max-width:360px) and (min-height:640px) {
+    nav{border-bottom: 5px solid #000;padding-bottom: 0}
+    nav .title{padding: 10px 0;margin-bottom: 0; width: 100%}
+    nav .menu{margin:0;display: block}
+    nav ul{width: 100%;display:none;background: #000;padding: 10px 0}
+    nav ul li{
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    nav .menu-arrow{
+        display: block;
+        margin:0;
+        transform: rotatex(0deg)
+    }
+}
+
+/*/////////////////////////////*/
+/*header settings*/
+header{
+    background-image: url(../images/bg6.jpg);
+    background-size: 100% ;
+    background-repeat: repeat-y;
+    padding-top: 65px;
+    height: 5000px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
