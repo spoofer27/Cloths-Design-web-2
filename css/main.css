@@ -76,9 +76,7 @@ nav .menu-arrow{display: none}
 /*/////////////////////////////*/
 /*header settings*/
 header{
-    background-image: url(../images/bg6.jpg);
-    background-size: 100% ;
-    background-repeat: repeat-y;
+    background-image: url(../images/bgtx.png);
     padding-top: 65px;
     height: 5000px
 }
