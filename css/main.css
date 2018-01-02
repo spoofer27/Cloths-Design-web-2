@@ -28,37 +28,49 @@ nav{
     overflow: hidden;
     position:fixed;
     z-index: 999;
-    width: 100%;
-    padding: 10px 0
+    width: 100%
 }
 nav .title{
     width: 30%;
-    float: left
+    float: left;
+    padding: 10px 0
 }
 nav .menu{display: none}
 nav ul{
     width: 70%;
     float: right;
+    color: rgb(212, 170, 93)
+}
+nav ul li{
+    cursor: pointer;
+    padding: 18px 10px;
+    font-weight: bold;
+    transition: all .3s ease-in-out
+}
+nav ul li:hover{
+    background-color:rgb(212, 170, 93);
+    color: #11304b
 }
 nav .menu-arrow{display: none}
 
 /*//////////////////////////////*/
 
-@media (max-width:360px) and (min-height:640px) {
-    nav{border-bottom: 5px solid #000;padding-bottom: 0}
+@media (max-width:760px){
+    nav{border-bottom: 5px solid rgb(212, 170, 93);padding-bottom: 0}
     nav .title{padding: 10px 0;margin-bottom: 0; width: 100%}
-    nav .menu{margin:0;display: block}
-    nav ul{width: 100%;display:none;background: #000;padding: 10px 0}
-    nav ul li{
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
+    nav ul{width: 100%;display:none;}
+    nav ul li{padding: 5px;border-radius: 5px 5px 0 0}
+    nav .menu{margin:0;display: block;cursor: pointer}
+    @media (min-height:360px){ 
+        nav ul{background: #000;padding: 10px 0 0;margin-bottom: 10px}
+        nav ul li{
+            display: block;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 0
+        }
     }
-    nav .menu-arrow{
-        display: block;
-        margin:0;
-        transform: rotatex(0deg)
-    }
+
 }
 
 /*/////////////////////////////*/
